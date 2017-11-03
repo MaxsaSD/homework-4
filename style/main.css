@@ -8,7 +8,7 @@ header{
     font-family: 'Helvetica', sans-serif;    
 }
 
-#logo p:nth-child(1){
+#logo h1:nth-child(1){
     color:#0c59cf;
     font-family: 'Impact', sans-serif;
     font-size:38pt;
@@ -16,7 +16,7 @@ header{
 
 #logo p:nth-child(2){
     font-size:14pt;
-    margin-top: -60px;
+    margin-top: -45px;
 }
 
 .contact_top_item p:nth-child(1){
