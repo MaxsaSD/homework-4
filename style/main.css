@@ -355,46 +355,102 @@ nav{
 
 #reg_sale{
     background-color: #0c59cf;
+    display: flex;
+    align-items:center;
 }
-
 #reg_sale p, label{
     color: #fff;
     font-weight: bold;
 }
-
-#reg_sale p:nth-child(1){
-    font-family: 'Arial', sans-serif;
-    font-size: 30pt;
-}
-
-#reg_sale p:nth-child(2){
-    font-family: 'Impact', sans-serif;
-    font-size: 144pt;
-    
-}
-
-#reg_sale p:nth-child(3){
+#reg_label{
+    text-align: center;
     font-family: 'Arial', sans-serif;
     font-size: 26pt;
+    padding: 50px 50px 50px 70px;
 }
-
+.sale_proc{
+    font-family: 'Impact', sans-serif;
+    font-size: 144pt;
+}
+.sale_label2{
+    font-size: 22pt;
+}
 #reg_form{
-    font-size: 14pt;    
+    font-size: 16pt;
+    margin-left: 100px;
 }
-
 #reg_form input{
     font-family: 'Helvetica', sans-serif;
     font-size: 14pt;
+    width: 18em;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+#reg_form button{
+    color:#fff;
+    font-family: 'Arial', sans-serif;
+    font-size: 14pt;
+    background-color: #72bb53;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 20%;
+    border: 0;
+}
+#reg_form button:hover{
+    background-color: #92d36e;
 }
 
-.contact_footer p{
+
+
+
+#contact_footer {
     font-family: 'Helvetica', sans-serif;
     font-weight: bold;
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    margin: 20px 0 5px 0;
+    text-align: center;
 }
+.contact_footer_item{
+    text-align: center;
+}
+.contact_footer_item:nth-child(1){
+    margin-left: 50px;
+}
+.contact_footer_item:nth-child(3){
+    margin-right: 50px;
+}
+#social_icon{
+    display: flex;
+    margin-top: 30px;
+}
+#social_icon{
+    display: flex;
+    margin-top: 30px;
+}
+#social_icon div{
+    margin-right: 3%;
+}
+
+
+
 
 footer{
     background-color: rgba(146, 146, 146, 0.5);
     color: #fff;
     font-family: 'Helvetica', sans-serif;
-    font-size: 14pt;
+    font-size: 12pt;
+    display: flex;
+    justify-content:space-around;
+    height: 30px;
+    margin: 3px 0;
+}
+footer div{
+    margin-top: -10px;
+}
+footer a{
+    text-decoration: none;
+    color: #fff;
 }
