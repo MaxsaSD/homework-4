@@ -233,12 +233,125 @@ nav{
 }
 
 
-
-
-
 #reviews{
-    background-color: rgba(61, 138, 247, 0.1);    
+    margin: 0 auto;
+    background-color: rgba(61, 138, 247, 0.1);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 75px 1fr;
+    grid-gap:50px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
+
+#reviews div:nth-child(1){
+    background-image: url('/images/review_alba.png');
+    background-position: right;
+    background-repeat: no-repeat;
+    text-align: right;
+    grid-column: 1; 
+    grid-row: 1; 
+}
+#reviews div:nth-child(1) p{
+    margin-right: 120px;
+}
+#reviews div:nth-child(1) .review_post{
+    margin-top: -20px;
+}
+#reviews div:nth-child(1) .review_quote{
+    padding-left: 20px;
+    line-height: 1.6em;
+}
+
+#reviews div:nth-child(2){
+    background-image: url('/images/review_goncharenko.png');
+    background-position: left;
+    background-repeat: no-repeat;
+    text-align: left;
+    grid-column: 2; 
+    grid-row: 1; 
+}
+#reviews div:nth-child(2) p{
+    margin-left: 120px;
+}
+#reviews div:nth-child(2) .review_post{
+    margin-top: -20px;
+}
+#reviews div:nth-child(2) .review_quote{
+    padding-right: 20px;
+    line-height: 1.6em;
+}
+#reviews div:nth-child(3){
+    text-align: center;
+    grid-column: 1/3; 
+    grid-row: 2; 
+    font-family: Helvetica, sans-serif;
+}
+#reviews div:nth-child(3) h2{
+    font-size: 30px;
+}
+#reviews div:nth-child(4){
+    background-image: url('/images/review_stechyshyn.png');
+    background-position: right;
+    background-repeat: no-repeat;
+    text-align: right;
+    grid-column: 1; 
+    grid-row: 3; 
+}
+#reviews div:nth-child(4) p{
+    padding-right: 120px;
+}
+#reviews div:nth-child(4) .review_name{
+    margin-top: -5px;
+}
+#reviews div:nth-child(4) .review_post{
+    margin-top: -20px;
+}
+#reviews div:nth-child(4) .review_quote{
+    padding-left: 20px;
+    line-height: 1.6em;
+}
+#reviews div:nth-child(5){
+    background-image: url('/images/review_kucherevsky.png');
+    background-position: left;
+    background-repeat: no-repeat;
+    text-align: left;
+    grid-column: 2; 
+    grid-row: 3; 
+}
+#reviews div:nth-child(5) p{
+    margin-left: 120px;
+}
+#reviews div:nth-child(5) .review_name{
+    margin-top: -5px;
+}
+#reviews div:nth-child(5) .review_post{
+    margin-top: -20px;
+}
+#reviews div:nth-child(5) .review_quote{
+   padding-right:  20px;
+    line-height: 1.6em;
+}
+.review_name{
+    font-weight: bold;
+    font-size: 18px;
+    font-family: Helvetica, sans-serif;
+}
+.review_post{
+    font-weight: bold;
+    font-size: 12px;
+    font-family: Helvetica, sans-serif;
+}
+.review_quote{
+    font-style: italic;    
+    font-size: 14px;
+}
+
+
+
+
+
+
 
 #reg_sale{
     background-color: #0c59cf;
