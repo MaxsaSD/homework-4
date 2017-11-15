@@ -57,6 +57,7 @@
                 &emsp;<strong>Дюрополімерні плінтуси</strong> - це найсучасніше рішення в дизайні. Це суцільна перевага і новітнє досягнення поєднання зовнішнього вигляду, внутрішнього складу та технічних характеристик.<br> 
                 &emsp;Підлоговий плінтус колекції Elegance – це новий продукт , який швидко завоював серця навіть найвибагливіших покупців. Окрім елегантної форми, плінтус має багато додаткових переваг, серед яких, наприклад, можливість фарбування плінтуса в будь-який колір або у той же, що і стіна. У цьому випадку плінтус виглядає, як невід’ємна частина стіни.    
             </p>
+            
             <div class="properties_box">
                 <div class="properties_item">
                     <img src="images/properties_strong.png" alt="МІЦНІСТЬ">    
@@ -79,6 +80,7 @@
                     <p>Цей тип плінтусу однозначно виділяється необмеженим терміном служби. Чудове співвідношення ціни та якості.</p>
                 </div>
             </div>
+            
         </div>
         
         <div id="slider">
@@ -152,29 +154,30 @@
         <div id="reg_sale">
             <div id="reg_label">
                 <p>
-                    З А Р Е Є С Т Р У Й С Я<br>
-                    <span class="sale_proc">20 %</span><br>
-                    <span class="sale_label2">ТА ОТРИМАЙ ЕКСКЛЮЗИВНУ ЗНИЖКУ</span>
+                    ЗАРЕЄСТРУЙСЯ<br>
+                    <span class="sale_label2">20%</span><br>
+                    <span class="sale_label3">ТА ОТРИМАЙ ЕКСКЛЮЗИВНУ ЗНИЖКУ</span>
                 </p>
             </div>
             <div id="reg_form">
-                <form id="client_data" method="post" action="https://formspree.io/bravo-soft@ukr.net">
+                <form id="client_data">
                     <label>Ім'я *:<br>
-                        <input type="text" placeholder="Ваше ім'я" name="client_name" required/>
+                        <input type="text" placeholder="Ваше ім'я" id="client_name" required/>
                     </label><br>
                     <label>Телефон *:<br>
-                        <input type="tel" placeholder="380501234567" name="client_phone" required pattern="[\d]{12}" />
+                        <input type="tel" placeholder="380501234567" id="client_phone" required pattern="[\d]{12}" />
                     </label><br>
                     <label>Email *:<br>
-                        <input type="email" placeholder="your_email@server.ua" name="client_email" required />
+                        <input type="email" placeholder="your_email@server.ua" id="client_email" required />
                     </label><br><br>
                     <button type="submit">Зареєструватися</button>
+                    <br><br>
+                    <section id="msg"></section>
                 </form>
             </div>            
         </div> 
         
         <div id="contact_footer">
-            
             <div class="contact_footer_item">
                 <img src="images/contact_phone.png" alt="Телефон">
                 <p>
@@ -192,18 +195,14 @@
                     <div><a href="http://twitter.com"><img src="images/contact_twitter.png" alt="Twitter"></a></div>
                 </div>
             </div>    
-            
             <div id="contact_footer_item">
                 <img src="images/google_map.jpg" alt="Карта Google">    
             </div>    
-            
             <div class="contact_footer_item">
-                
                 <img src="images/contact_time.png" alt="Робочий час">
                 <p>
                     Пн-Пт<br>10:00-19:00
                 </p><br>
-                
                 <img src="images/contact_location.png" alt="Адреса">
                 <p>
                     01000 м. Київ,<br>вул. Хрещатик, 25 А
@@ -211,6 +210,7 @@
             </div>    
         </div>
     </main>
+
     <footer>
         <div>
             <p>Supported by PLINTUS DESIGN</p>
@@ -222,7 +222,9 @@
             <p><a href="#header_top" class="smooth">нагору</a></p>
         </div>
     </footer>
+
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/js_smooth_scroll.js"></script>    
+    <script type="text/javascript" src="js/form.js"></script>    
 </body>
 </html>
