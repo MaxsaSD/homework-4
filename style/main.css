@@ -152,7 +152,7 @@ nav{
     .properties_box{
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr, 1fr, 1fr, 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
     }
     .properties_item{
         font-size: 18px;
@@ -168,19 +168,19 @@ nav{
     }
     .properties_box div:nth-child(1){
         background-color: rgba(96, 96, 96, 0.1);
-        margin-right: 20px
+        margin-right: 20px;
         grid-column: 1;
         grid-row: 1;
     }
     .properties_box div:nth-child(2){
         background-color: rgba(0, 108, 229, 0.1);
-        margin-right: 20px
+        margin-right: 20px;
         grid-column: 1;
         grid-row: 2;
     }
     .properties_box div:nth-child(3){
         background-color: rgba(146, 211, 110, 0.1);
-        margin-right: 20px
+        margin-right: 20px;
         grid-column: 1;
         grid-row: 3;
     }
