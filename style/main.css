@@ -154,17 +154,33 @@ nav{
 }
 
 /*Properties section*/
+#properties {
+    background-color: rgba(61, 138, 247, 0.1);
+    margin-top: 0;
+    padding: 50px 60px 50px 60px;
+}
+
 .properties_box{
     display: flex;
     justify-content: space-around;
 }
 
 .properties_item{
-    font-size: 18px;
-    height: 540px;
+    border-radius:5px;
+    font-size: 16px;
+    height: 560px;
     padding: 40px 10px 0 10px;
     text-align:center;
     width: 23%;
+}
+.properties_item img {
+    margin-top: -2%;
+} 
+
+.properties_item h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15%;
 }
 
 .properties_item p {
@@ -172,72 +188,8 @@ nav{
     width: 100%;
 }
 
-@media(max-width:1004px){
-    .properties_box{
-        display: flex;
-        flex-wrap:wrap;
-        flex-direction:column;        
-    }
-    .properties_item{
-        border-radius: 5px;
-        font-size: 18px;
-        height: 200px;
-        padding: 40px 10px 0 10px;
-        width: 100%;
-        text-align: left;
-    }
-    .properties_box div:nth-child(1){
-        margin-bottom: 10px;
-    }
-    .properties_box div:nth-child(2){
-        margin-bottom: 10px;
-    }
-    .properties_box div:nth-child(3){
-        margin-bottom: 10px;
-    }
-    .properties_item img {
-        min-width: 80px;
-        width: 20%;
-        margin-left: 20px;
-    }    
-    .properties_item h3 {
-        margin-top: -20%;
-        margin-left: 30%;
-    }    
-    .properties_item p {
-        margin-left: 30%;
-        width: 70%;
-    }
-}
-
-@media(max-width:501px){
-    .properties_item {
-        text-align: center;
-    }
-    .properties_item img{
-        display: none;
-    }
-    .properties_item h3 {
-        font-size: 18px;
-        margin-top: 30px;
-        margin-left: 0;
-    }    
-    .properties_item p{
-        font-size: 16px;
-        margin-top: -20px;
-        margin-left: 0;
-        width: 100%;
-    }
-}
-
-#properties {
-    background-color: rgba(61, 138, 247, 0.1);
-    margin-top: 0;
-    padding: 50px 60px 50px 60px;
-}
-
 #properties p:nth-child(1){
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.6em;
     text-align: justify;
 }
@@ -275,6 +227,65 @@ nav{
 
 .properties_box div:nth-child(4) h3{
     color: #e61610;
+}
+
+@media(max-width:1004px){
+    .properties_box{
+        display: flex;
+        flex-wrap:wrap;
+        flex-direction:column;        
+    }
+    .properties_item{
+        border-radius: 5px;
+        font-size: 16px;
+        height: 200px;
+        padding: 40px 10px 0 10px;
+        width: 100%;
+        text-align: left;
+    }
+    .properties_box div:nth-child(1){
+        margin-bottom: 10px;
+    }
+    .properties_box div:nth-child(2){
+        margin-bottom: 10px;
+    }
+    .properties_box div:nth-child(3){
+        margin-bottom: 10px;
+    }
+    .properties_item img {
+        min-width: 80px;
+        width: 20%;
+        margin-left: 20px;
+    }    
+    .properties_item h3 {
+        margin-top: -20%;
+        margin-left: 30%;
+    }    
+    .properties_item p {
+        margin-top: -3%;
+        margin-left: 30%;
+        width: 70%;
+    }
+}
+
+@media(max-width:600px){
+    .properties_item {
+        text-align: center;
+    }
+    .properties_item img{
+        display: none;
+    }
+    .properties_item h3 {
+        font-size: 16px;
+        margin-top: 30px;
+        margin-left: 0;
+    }    
+    .properties_item p{
+        font-size: 14px;
+        margin-top: -20px;
+        margin-left: 0;
+        width: 100%;
+    }
 }
 
 /*Galery section*/
@@ -339,9 +350,9 @@ nav{
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 75px 1fr;
     grid-gap:50px;
-    margin: 0 auto;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    /*margin: 0 auto;*/
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 #reviews div:nth-child(1){
@@ -351,6 +362,87 @@ nav{
     grid-column: 1; 
     grid-row: 1; 
     text-align: right;
+}
+
+#reviews div:nth-child(2){
+    background-image: url('../images/review_goncharenko.png');
+    background-position: left;
+    background-repeat: no-repeat;
+    grid-column: 2; 
+    grid-row: 1; 
+    text-align: left;
+}
+
+#reviews div:nth-child(3){
+    font-family: Helvetica, sans-serif;
+    grid-column: 1/3; 
+    grid-row: 2; 
+    text-align: center;
+}
+
+#reviews div:nth-child(4){
+    background-image: url('../images/review_stechyshyn.png');
+    background-position: right;
+    background-repeat: no-repeat;
+    grid-column: 1; 
+    grid-row: 3; 
+    text-align: right;
+}
+
+#reviews div:nth-child(5){
+    background-image: url('../images/review_kucherevsky.png');
+    background-position: left;
+    background-repeat: no-repeat;
+    grid-column: 2; 
+    grid-row: 3; 
+    text-align: left;
+}
+
+@media(max-width:700px){
+    #reviews{
+        background-color: rgba(61, 138, 247, 0.1);
+        display: flex;
+        flex-wrap:wrap;
+        margin: 0 auto;
+    }  
+
+    #reviews div:nth-child(1){
+        background-image: url('../images/review_alba.png');
+        background-position: right;
+        background-repeat: no-repeat;
+        text-align: right;
+        margin-right: 20px;
+    }
+    
+    #reviews div:nth-child(2){
+        background-image: url('../images/review_goncharenko.png');
+        background-position: left;
+        background-repeat: no-repeat;
+        text-align: left;
+        margin-left: 20px;
+    }
+
+    #reviews div:nth-child(3){
+        font-family: Helvetica, sans-serif;
+        text-align: center;
+    }
+
+    #reviews div:nth-child(4){
+        background-image: url('../images/review_stechyshyn.png');
+        background-position: right;
+        background-repeat: no-repeat;
+        text-align: right;
+        margin-right: 20px;
+    }
+
+    #reviews div:nth-child(5){
+        background-image: url('../images/review_kucherevsky.png');
+        background-position: left;
+        background-repeat: no-repeat;
+        text-align: left;
+        margin-left: 20px;
+    }
+    
 }
 
 #reviews div:nth-child(1) p{
@@ -366,15 +458,6 @@ nav{
     padding-left: 20px;
 }
 
-#reviews div:nth-child(2){
-    background-image: url('../images/review_goncharenko.png');
-    background-position: left;
-    background-repeat: no-repeat;
-    grid-column: 2; 
-    grid-row: 1; 
-    text-align: left;
-}
-
 #reviews div:nth-child(2) p{
     margin-left: 120px;
 }
@@ -388,25 +471,10 @@ nav{
     padding-right: 20px;
 }
 
-#reviews div:nth-child(3){
-    font-family: Helvetica, sans-serif;
-    grid-column: 1/3; 
-    grid-row: 2; 
-    text-align: center;
-}
-
 #reviews div:nth-child(3) h2{
     font-size: 30px;
 }
 
-#reviews div:nth-child(4){
-    background-image: url('../images/review_stechyshyn.png');
-    background-position: right;
-    background-repeat: no-repeat;
-    grid-column: 1; 
-    grid-row: 3; 
-    text-align: right;
-}
 
 #reviews div:nth-child(4) p{
     padding-right: 120px;
@@ -423,15 +491,6 @@ nav{
 #reviews div:nth-child(4) .review_quote{
     line-height: 1.6em;
     padding-left: 20px;
-}
-
-#reviews div:nth-child(5){
-    background-image: url('../images/review_kucherevsky.png');
-    background-position: left;
-    background-repeat: no-repeat;
-    grid-column: 2; 
-    grid-row: 3; 
-    text-align: left;
 }
 
 #reviews div:nth-child(5) p{
@@ -468,21 +527,7 @@ nav{
     font-size: 14px;
 }
 
-@media (max-width:900px){
-    #reg_sale{
-        background-color: #0c59cf;
-        display: flex;
-        flex-wrap:wrap;
-        align-items:center;
-        justify-content:center;
-    }
-    
-    .sale_label2{
-        font-family: 'Impact', sans-serif;
-        font-size: 0.9em;
-    }    
-}
-
+/*Sales section*/
 #reg_sale{
     background-color: #0c59cf;
     display: flex;
@@ -546,6 +591,29 @@ nav{
     text-align: center;
     margin-bottom: 20px;
 }
+@media (max-width:900px){
+    #reg_sale{
+        background-color: #0c59cf;
+        display: flex;
+        flex-wrap:wrap;
+        align-items:center;
+        justify-content:center;
+    }
+    
+    .sale_label2{
+        font-family: 'Impact', sans-serif;
+        font-size: 0.9em;
+    }    
+}
+
+
+
+
+
+
+
+
+
 
 @media (max-width:900px){
     #contact_footer {
